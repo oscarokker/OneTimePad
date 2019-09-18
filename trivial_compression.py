@@ -40,7 +40,7 @@ class CompressedGene:
         return self.decompress()
 
 if __name__ == "__main__":
-    original: str = "TAGGGATTAACCGTTATATATATATAGCCATGGATCGATTATATAGGGATTAACCGTTATATATATATAGCCATGGATCGATTATA" * 100
+    original: str = "TAGGGATTAACCGTTATATATATATAGCCATGGATCGATTATATAGGGATTAACCGTTATATATATATAGCCATGGATCGATTATA"
     print("original is {} bytes".format(getsizeof(original)))
     compressed: CompressedGene = CompressedGene(original)  # Compress
     print("compressed is {} bytes".format(getsizeof(compressed.bit_string)))
