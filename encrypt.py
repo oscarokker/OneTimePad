@@ -1,6 +1,5 @@
 import pickle
-
-import noname
+import onetimepad
 
 class EncryptFrame(noname.EncryptFrame):
     def __init__(self, parent):
